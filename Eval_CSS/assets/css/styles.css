@@ -137,3 +137,9 @@ hr
 {
     color: gainsboro;
 }
+
+.img_produit
+{
+    width: 15rem;
+    height: auto;
+}

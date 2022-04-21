@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact.html</title>
+
+</head>
+
+<body>
+    
+    <Header>
+    
+        <img src="assets/src/img/jarditou_logo.jpg"
+        alt="logo_jarditou" title="logo_jarditou"
+        width="300" height="100">
+
+            <p>La qualité depuis 70 ans</p>
+
+    </Header>
+
+    <nav>
+        
+        <ul>
+
+            <li><a href="index.html" class="lien_margin bouton_accueil">Acceuil</a></li>
+            
+            <li><a href="tableau.html" class="bouton_tableau">Tableau</a></li>
+            
+            <li><a href="contact.html" class="bouton_contact">Formulaire</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Pas la moindre idée d'où mettre la bannière -->
+
+    <img src="assets/src/img/promotion.jpg"
+    alt="banniere_promo" title="banniere_promo">
+
+    <section>
+
+        <h1>Contact</h1>
+
+        <hr>
+    
+        <form action="http://bienvenu.net/script.php" method="post" id="formulaire_complete">
+
+            <p>* Ces zones sont obligatoires</p>
+
+            <fieldset>
+
+                <legend>Vos coordonnées</legend>
+
+                    <label for="nom">Mon nom* : </label><input type="text" name="nom" id="nom" maxlength="25" required><br>
+                    <label for="prenom">Mon prénom* : </label><input type="text" name="prenom" id="prenom" maxlength="25" required>
+
+                    <br><br>
+
+                    <label for="sexe">Sexe* :</label>
+                       <input type="radio" name="sexe" value="feminin" id="sexe" checked> Feminin
+                       <input type="radio" name="sexe" value="masculin"> Masculin
+                       <input type="radio" name="sexe" value="Autre"> Autre
+             
+                    <br><br>
+
+                    <label for="age">Date de naissance* : </label><input type="date" name="ddn" id="age" required><br>
+
+                    <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse" maxlength="100"><br>
+                    <label for="ville">Ville : </label><input type="text" name="ville" id="ville" maxlength="100"><br>
+                    <label for="mail">E-mail* : </label><input type="text" name="mail" id="mail" maxlength="50" placeholder="dave.loper@afpa.fr" required>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Votre demande</legend>
+
+                    <label for="sujet">Sujet* :</label>
+
+                        <select id="sujet">
+                            <option value="null" selected>Veuillez séléctionner un sujet</option>
+                            <option value="commandes">Mes commandes</option>
+                            <option value="produit">Question sur un produit</option>
+                            <option value="reclamation">Réclamation</option>
+                            <option value="autres">Autres</option>
+                        </select>
+                
+                    <br>
+
+                    <label for="question">Votre question* : </label><textarea name="question" cols="40" id="question" required></textarea>
+                
+                    <br>
+
+            </fieldset>
+
+                <br>    
+                
+                <input type="checkbox" name="accepter" value="accepter" required>* J'accepte le traitement informatique de ce formulaire
+                
+                <br> <br>
+        
+            <input type="submit" value="Envoyer">
+            <input type="submit" value="Annuler"><br>
+
+            <hr>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <ul>
+    
+            <li><a href="index.html" class="lien_margin bouton_mention">Mention légales</a></li>
+            
+            <li><a href="tableau.html" class="bouton_horaires">Horaires</a></li>
+            
+            <li><a href="tableau.html" class="bouton_plan">Plan du site</a></li>
+    
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>

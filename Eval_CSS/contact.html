@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact.html</title>
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
@@ -16,35 +17,39 @@
     
     <Header>
     
-        <img src="assets/src/img/jarditou_logo.jpg" alt="logo_jarditou" title="logo_jarditou" width="300" height="100">
+        <img src="assets/src/img/jarditou_logo.jpg"
+        alt="logo_jarditou" title="logo_jarditou"
+        width="500" height="100"
+        class="logo_jarditou">
 
-            <p>La qualité depuis 70 ans</p>
+        <p class="texte_logo">La qualité depuis 70 ans</p>
 
     </Header>
 
     <nav>
 
-        <ul>
+        <div class="ul">
 
-            <li>
-                <a href="index.html">Acceuil</a>
-            </li>
-
-            <li>
-                <a href="tableau.html">Tableau</a>
-            </li>
-
-            <li>
-                <a href="contact.html">Formulaire</a>
-            </li>
-
-        </ul>
+            <a href="index.html" class="lien_margin bouton_accueil">Acceuil</a>
+            
+            <a href="tableau.html" class="bouton_tableau">Tableau</a>
+            
+            <a href="contact.html" class="bouton_contact">Formulaire</a>
+            
+        </div>
+        
 
     </nav>
 
-    <!-- Pas la moindre idée d'où mettre la bannière -->
+        <!-- Pas la moindre idée d'où mettre la bannière -->
+        <p>
 
-    <img src="assets/src/img/promotion.jpg" alt="banniere_promo" title="banniere_promo">
+            <img src="assets/src/img/promotion.jpg"
+            alt="banniere_promo" title="banniere_promo"
+            width="100%"
+            class="banniere_promo">
+
+        </p>
 
     <section>
 
@@ -52,7 +57,7 @@
 
         <hr>
     
-        <form action="http://bienvenu.net/script.php" method="post" id="formulaire_complete">
+        <form action="http://bienvenu.net/script.php" method="post" id="formulaire_complete" class="article_a">
 
             <p>* Ces zones sont obligatoires</p>
 
@@ -117,26 +122,18 @@
 
     </section>
 
-    
-
 
     <footer>
 
-        <ul>
-
-            <li>
-                <a href="index.html">Mention légales</a>
-            </li>
-
-            <li>
-                <a href="tableau.html">Horaires</a>
-            </li>
+        <div class="ul">
+            
+            <a href="index.html" class="lien_margin bouton_mention">Mention légales</a>
         
-            <li>
-                <a href="tableau.html">Plan du site</a>
-            </li>
+            <a href="tableau.html" class="bouton_horaires">Horaires</a>
+        
+            <a href="tableau.html" class="bouton_plan">Plan du site</a>
 
-        </ul>
+        </div>
 
     </footer>
 
